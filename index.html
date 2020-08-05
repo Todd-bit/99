@@ -1,46 +1,47 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!DOCTYPE html>
+<html lang="en-US">
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rosie Odenkirk</title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    
-        <title>Visit Blair County</title>
-    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-    <body>
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-8">
+    <style>
 
-                    </div>
-                    <div class="col-4">
-                        <div id="map"></div>
-                        <script>
-                        function initMap() {
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 3,
-                center: {
-                    lat: 46.619261,
-                    lng: -33.134766
-                }
-            });
-        }
-                        </script>
-                    </div>
-                </div>    
-                <div class="row">
-                    <div class="col-8">
+    img {
+        height: 360px;
+        max-width: 100%
+    }
 
-                    </div>
-                    <div class="col-4">
-                        <form id="contact2">
+        div#map {
+        height: 360px;
+        max-width: 100%;
+    }
+
+    </style>    
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <img src="https://images.pexels.com/photos/3668481/pexels-photo-3668481.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" style="min-height: 360px;width: 100%;">
+        </div>
+        <div class="col-4">
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <p>hey</p>
+        </div>
+        <div class="col-4">
+                  <form id="contact2">
         <label for="firstname">First name</label><br>
         <input type="text" name="firstname" id="firstname"/>
       </form>
@@ -50,23 +51,18 @@
       </form>
       <form>
         <label for="email">Email</label><br>
-        <input type="text" name="email" id="email"/>
+         <input type="text" name="email" id="email"/>
       </form>
       <form>
         <label for="messages">Messages</label><br>
         <input type="text" name="messages" id="messages"/><br><br><br>
         <button type="submit" class="btn btn-success">Submit</button>
       </form>
-   
-                    </div>
-                </div>
-            </div>
-        </header>  
-
-        
-      
-        <script>
-            function initMap() {
+        </div>
+    </div>
+</div>        
+    <script>
+        function initMap() {
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 3,
                 center: {
@@ -75,9 +71,12 @@
                 }
             });
         }
-        </script>
-        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARLBQGpmmXP1IBVAgKWm5WbmAGVzEBRYk&callback=initMap"></script>
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgnd9d8p1-CIf5dcrwfsIiHKa-93NMQys&callback=initMap"></script>
 
-    </body>
-    </html>
+</body>
+</html>
+
+
+      
